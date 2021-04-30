@@ -15,29 +15,29 @@ public class Aviao extends Veiculo{
 	}
 
 	public double getAltitude() {
-		if((altitude <= 3000)&&(altitude >= 1000)) {
-		}
 		return altitude;
 	}
 
 	public void setAltitude(double altitude) {
+		if((altitude <= 3000)&&(altitude >= 1000)) {
 		this.altitude = altitude;
+		}
 	}
 
 	public double getResistenciaDoAr() {
-		if((resistenciaDoAr < 50)&&(resistenciaDoAr > 100)) {
-		}
 		return resistenciaDoAr;
 	}
 	public void setResistenciaDoAr(double resistenciaDoAr) {
+		if((resistenciaDoAr < 50)&&(resistenciaDoAr > 100)) {
 		this.resistenciaDoAr = resistenciaDoAr;
+		}
 	}
 	
 	@Override
-	public void aumentarVelocidade() { //acho que tenho que criar condiÁ„o aqui
-		System.out.println("A velocidade do avi„o aumentou para " + this.getVelocidade() + " km/h");
+	public void aumentarVelocidade() { //acho que tenho que criar condi√ß√£o aqui
+		System.out.println("A velocidade do avi√£o aumentou para " + this.getVelocidade() + " km/h");
 	}
-	public void diminuirVelocidade() { //acho que tenho que criar condiÁ„o aqui
-		System.out.println("A velocidade do avi„o diminuiu para " + this.getVelocidade() + " km/h");
+	public void diminuirVelocidade() { //acho que tenho que criar condi√ß√£o aqui
+		System.out.println("A velocidade do avi√£o diminuiu para " + this.getVelocidade() + " km/h");
 	}
 }
